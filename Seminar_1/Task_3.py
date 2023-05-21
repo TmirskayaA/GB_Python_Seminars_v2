@@ -3,6 +3,7 @@ number = int(input("Введите номер своего билета: "))
 
 if len(str(number)) != 6:
     print("У билета номер состоит из 6 цифр!")
+    exit()
 
 def HappyNumber(x):
     i = 0

@@ -5,6 +5,7 @@ counter = int(input("Сколько долек хотите отломить? ")
 
 if counter > long * width:
     print("Чтобы отломить столько долек, вам нужна шоколадка побольше.")
+    exit()
 
 def CanIGetTheseSlices(x, y, z):
     if z % x == 0 or z % y == 0:
