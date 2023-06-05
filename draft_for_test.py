@@ -1,11 +1,20 @@
-def Remains(x):
-    counter = 0
-    while x % 3 != 0:
-        x -= 1
-        counter += 1
-    if (x / 3) % 2 != 0:
-        counter += 1
-    return counter
+a = [1, 2, 3, 4, 5]
+min = 1
+i = 4
+l = 0
+while i >= min:
+    for j in a:
+        if j == i: 
+            l = i
+            print(f"L = {l}")
+        i -= 1
 
-a = Remains(int(input("Введите число: ")))
-print(a)
+a = [5,4,3,1,2]
+i = 1
+max = 5
+while i <= max:
+    for j in a:
+        if j == i: 
+            l = i
+            print(f"M = {l}")
+    i += 1
