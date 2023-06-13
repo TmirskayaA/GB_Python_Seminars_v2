@@ -1,8 +1,8 @@
-array = list(input("введите число: "))
-print(array)
+import json 
 
-result = []
-for i in range(0, len(array)):
-    if array[i].isdigit(): result.append(int(array[i]))
+string_1 = '{"subj1":"Computer Science","subj2":"Physics","subj3":"Chemistry","subj4":"Mathematics"}' 
+print("String_1 is ",string_1) 
 
-print(result)
+res_dict=json.loads(string_1) 
+
+print("The resultant dictionary is ",res_dict) 
