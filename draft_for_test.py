@@ -1,8 +1,8 @@
+array = list(input("введите число: "))
+print(array)
 
+result = []
+for i in range(0, len(array)):
+    if array[i].isdigit(): result.append(int(array[i]))
 
-array1 = list(str(input()))
-array2 = list(str(input()))
-
-p = set(array1).intersection(array2)
-
-print(len(p))
+print(result)
