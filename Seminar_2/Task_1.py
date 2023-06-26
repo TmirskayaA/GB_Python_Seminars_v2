@@ -1,17 +1,11 @@
+import modul
+
 print("Здравствуйте!")
 number = int(input("Сколько монеток лежит на столе? "))
 
 print("Перемешали монетки в руке и бросили их на стол:")
 
-import random
-
-def ArrayOfNumbers(long):
-    array = []
-    for i in range(long):
-        array.append(random.randint(1,2))
-    return array
-
-ranArray = ArrayOfNumbers(number)
+ranArray = modul.ArrayOfNumbers(number)
 
 print('Решка - 1, Орёл - 2: ')
 print(ranArray)
