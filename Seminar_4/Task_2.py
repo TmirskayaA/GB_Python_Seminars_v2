@@ -9,7 +9,7 @@ number = int(input("Сколько грядок вы посадили? "))
 
 dictionary = modul.fill_dictionary(number)
 
-file = open('Seminar_4\Garden_beds.txt', 'a')
+file = open('Seminar_4\Garden_beds.txt', 'w')
 file.write(json.dumps(dictionary))
 file.close()
 
